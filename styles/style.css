@@ -1,4 +1,59 @@
-html {
+html, body {
     font-size: 18px;
     font-family: overpass;
+    height: 100vh; /* Full height of the viewport */
+    /* overflow: hidden;  Prevent scrolling */
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    border: 1px solid #000;
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 28px;
+}
+
+.descriptionbox {
+    border: 1px solid #8bd10a;
+    width: 50%;
+    flex: 1;
+}
+
+.photobox {
+    padding: 15px;
+    border: 1px solid #000;
+    width: 50%;
+    flex: 1;
+}
+
+.descriptiontxt {
+    background-color: rgb(226, 220, 252, .6);
+    border: solid 1px black;
+    padding: 25px;
+}
+
+.photo {
+    border: 1px solid #000;
+    text-align: center;
+}
+
+.photo img {
+    max-width: 100%;
+    height: auto;
+}
+
+header {
+    height: 55px;
+    flex-shrink: 0;
 }
