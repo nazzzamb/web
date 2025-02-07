@@ -5,14 +5,16 @@ html, body {
     /* overflow: hidden;  Prevent scrolling */
     display: flex;
     flex-direction: column;
+    margin: 0;
+    padding: 0;
 }
 
 main {
-    border: 1px solid #000;
     flex-grow: 1;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-right: 8%;
 }
 
 h1 {
@@ -25,19 +27,19 @@ h2 {
 }
 
 .descriptionbox {
-    border: 1px solid #8bd10a;
     width: 50%;
     height: 80%;
     flex: 1;
     transform: scale(1);
     background-color: rgb(226, 220, 252, .6);
+    border-radius: 10px;
+    padding: 5px;
 }
 
 .photobox {
     display: flex;
     align-items: right;
     justify-content: right;
-    border: 1px solid #060ade;
     width: 50%;
     flex: 1;
     margin: 0;
@@ -46,10 +48,27 @@ h2 {
 }
 
 .photobox img {
-    
+    border-radius: 10px;
 }
 
 header {
-    height: 55px;
+    display: flex;
+    height: 70px;
     flex-shrink: 0;
+    justify-content: space-between;
+}
+
+header img {
+    margin: 5px;
+    margin-left: 180%;
+    height: 70px;
+    max-width: auto;
+}
+
+.navigation, .list {
+    font-size: 22px;
+    list-style-type: none;
+    display: flex;
+    gap: 35px;
+    margin-right: 66px;
 }
